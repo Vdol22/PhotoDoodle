@@ -4,7 +4,7 @@ export CONFIG="./default_config.yaml"
 export TRAIN_DATA="data/sksedgeeffect/meta.jsonl"
 export LOG_PATH="$OUTPUT_DIR/log"
 
-CUDA_VISIBLE_DEVICES=1 accelerate launch --config_file $CONFIG train_lora_flux_pe.py \
+CUDA_VISIBLE_DEVICES=0 accelerate launch --config_file $CONFIG train_lora_flux_pe.py \
     --pretrained_model_name_or_path $MODEL_DIR \
     --width 512 \
     --height 768 \
