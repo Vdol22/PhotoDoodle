@@ -19,7 +19,7 @@ CUDA_VISIBLE_DEVICES=0 accelerate launch --config_file $CONFIG train_lora_flux_p
     --learning_rate=1e-4 \
     --train_batch_size=1 \
     --num_validation_images=2 \
-    --validation_image "1.png" \
+    --validation_image "assets/1.png" \
     --validation_prompt "add yellow flames to the cat by sksedgeeffect" \
     --num_train_epochs=10000 \
     --validation_steps=2000 \
